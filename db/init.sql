@@ -4,6 +4,9 @@ CREATE TABLE Listing (
   description VARCHAR(128),
   date_created DATE,
   price INT,
+  image_location VARCHAR(512),
+  category VARCHAR(20),
+  original_poster VARCHAR(128),
   PRIMARY KEY (listing_number)
 );
 
@@ -13,6 +16,8 @@ CREATE TABLE Account (
   password VARCHAR(128),
   email VARCHAR(128),
   phone_number VARCHAR(20),
+  rating INT,
+  isSeller BOOLEAN,
   isAdmin BOOLEAN,
   PRIMARY KEY (account_number)
 );
